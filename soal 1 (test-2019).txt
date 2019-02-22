@@ -1,0 +1,12 @@
+create database inventaris
+
+create table perangkat2 ( 
+	id int primary key, 
+	nama varchar (32), 
+	jumlah int)
+
+insert into perangkat (id, nama, jumlah) values (1, 'Router', 2)
+
+UPDATE perangkat SET jumlah= 9 WHERE id=3
+
+select * from perangkat where nama like '%op%'
