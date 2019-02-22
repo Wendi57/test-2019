@@ -2,6 +2,7 @@
 # FileName="Connection_php_mysql.htm"
 # Type="MYSQL"
 # HTTP="true"
+require_once "mysql.php";
 $hostname_Koneksi = "localhost";
 $database_Koneksi = "inventaris";
 $username_Koneksi = "root";
