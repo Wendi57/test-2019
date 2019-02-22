@@ -47,7 +47,13 @@ $totalRows_RsPerangkat = mysql_num_rows($RsPerangkat);
 <body>
 <div align='center'>
 
-<table>
+<table width="600px">
+  <tr>
+  	<td>
+    <h3 align="center">DATA PERANGKAT</h3>
+    </td>
+  </tr>
+  
   <tr>
   	<td>
     <a href="tambah.php">Create</a>
@@ -57,19 +63,19 @@ $totalRows_RsPerangkat = mysql_num_rows($RsPerangkat);
   <tr>
     <td>
     
-    <table border="1" >
+    <table border="1" width="100%">
   <tr>
-    <td>id</td>
-    <td>nama</td>
-    <td>jumlah</td>
-    <td>aksi</td>
+    <th>id</th>
+    <th>nama</th>
+    <th>jumlah</th>
+    <th>aksi</th>
   </tr>
   <?php do { ?>
     <tr>
       <td><?php echo $row_RsPerangkat['id']; ?></td>
       <td><?php echo $row_RsPerangkat['nama']; ?></td>
-      <td><?php echo $row_RsPerangkat['jumlah']; ?></td>
-      <td>
+      <td align="center"><?php echo $row_RsPerangkat['jumlah']; ?></td>
+      <td align="center">
       <a href="edit.php?id=<?php echo $row_RsPerangkat['id']; ?>">edit</a> &nbsp; &nbsp; 
       <a href="hapus.php?id=<?php echo $row_RsPerangkat['id']; ?>" onclick="return confirm('Apakah Data Ini Akan Dihapus?')">hapus</a></td>
     </tr>
