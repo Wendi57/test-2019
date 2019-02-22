@@ -55,21 +55,22 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
 ?>
 
 <form method="post" name="form1" action="<?php echo $editFormAction; ?>">
+  <p ><h3 align="center">TAMBAH DATA PERANGKAT</h3></p>
   <table align="center">
     <tr valign="baseline">
-      <td nowrap align="right">Id</td>
+      <td valign="top" nowrap>Id</td>
       <td><input type="text" name="id" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
-      <td nowrap align="right">Nama</td>
+      <td valign="top" nowrap>Nama</td>
       <td><input type="text" name="nama" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
-      <td nowrap align="right">Jumlah</td>
+      <td valign="top" nowrap>Jumlah</td>
       <td><input type="text" name="jumlah" value="" size="32"></td>
     </tr>
     <tr valign="baseline">
-      <td nowrap align="right">&nbsp;</td>
+      <td valign="top" nowrap>&nbsp;</td>
       <td><input type="submit" value="Insert record"></td>
     </tr>
   </table>

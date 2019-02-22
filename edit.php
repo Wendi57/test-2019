@@ -67,21 +67,22 @@ mysql_free_result($RsEdit);
 ?>
 
 <form method="post" name="form1" action="<?php echo $editFormAction; ?>">
+  <p ><h3 align="center">UBAH DATA PERANGKAT</h3></p>
   <table align="center">
     <tr valign="baseline">
-      <td nowrap align="right">Id</td>
+      <td valign="baseline" nowrap>Id</td>
       <td><?php echo $row_RsEdit['id']; ?></td>
     </tr>
     <tr valign="baseline">
-      <td nowrap align="right">Nama</td>
+      <td valign="baseline" nowrap>Nama</td>
       <td><input type="text" name="nama" value="<?php echo htmlentities($row_RsEdit['nama'], ENT_COMPAT, ''); ?>" size="32"></td>
     </tr>
     <tr valign="baseline">
-      <td nowrap align="right">Jumlah</td>
+      <td valign="baseline" nowrap>Jumlah</td>
       <td><input type="text" name="jumlah" value="<?php echo htmlentities($row_RsEdit['jumlah'], ENT_COMPAT, ''); ?>" size="32"></td>
     </tr>
     <tr valign="baseline">
-      <td nowrap align="right">&nbsp;</td>
+      <td valign="baseline" nowrap>&nbsp;</td>
       <td><input type="submit" value="Update record"></td>
     </tr>
   </table>
